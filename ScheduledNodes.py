@@ -136,9 +136,9 @@ class BatchPromptScheduleAdvanced:
         return {"required": {"text": ("STRING", {"multiline": True, "default": defaultPrompt}),
                              "clip": ("CLIP",),
                              "max_frames": ("INT", {"default": 120.0, "min": 1.0, "max": 999999.0, "step": 1.0}),
-                             "print_output":("BOOLEAN", {"default": False}),},
                              "token_normalization": (["none", "mean", "length", "length+mean"],),
                              "weight_interpretation": (["comfy", "A1111", "compel", "comfy++" ,"down_weight"],),
+                             "print_output":("BOOLEAN", {"default": False}),},
 
                 # "forceInput": True}),},
                 "optional": {"pre_text": ("STRING", {"multiline": True}),  # "forceInput": True}),
